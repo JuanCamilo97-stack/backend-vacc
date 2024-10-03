@@ -5,7 +5,10 @@ import { MunicipalitySeedService } from './municipalities/municipality-seed/muni
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.enableCors();
+  app.enableCors({
+  origin: ['http://localhost:4200', 'https://frontend-vacc.vercel.app'],
+});
+
 
   const municipalitySeedService = app.get(MunicipalitySeedService);
   
