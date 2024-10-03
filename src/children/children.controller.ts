@@ -3,7 +3,7 @@ import { ChildrenService } from './children.service';
 import { CreateChildDto } from './dto/create-child.dto';
 import { Child } from './child.entity';
 
-@Controller('api/children') 
+@Controller('children') 
 export class ChildrenController {
   constructor(private readonly childrenService: ChildrenService) {}
 

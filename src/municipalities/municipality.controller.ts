@@ -2,7 +2,7 @@ import { Controller, Get,Param } from '@nestjs/common';
 import { MunicipalityService } from './municipality.service';
 import { GetDepartmentDto } from './dto/get-department.dto';
 
-@Controller('api/departments')
+@Controller('departments')
 export class MunicipalityController {
   constructor(private readonly municipalityService: MunicipalityService) {}
 
